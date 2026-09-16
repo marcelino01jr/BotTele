@@ -1,0 +1,16 @@
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(name)s - %(message)s",
+)
+
+
+def main() -> None:
+    from app.telegram.bot import start_bot
+
+    start_bot()
+
+
+if __name__ == "__main__":
+    main()
